@@ -207,7 +207,7 @@ function editPercent(i){
 }
 
 function editLot(i){
-  let val = prompt("请输入金额（例如 100）", tableData[i].lot.replace('$',''))
+  let val = prompt("请输入金额（例如 100）", tableData[i].lot)
 
   if(val === null) return
 
@@ -218,8 +218,8 @@ function editLot(i){
     return
   }
 
-  tableData[i].lot = "$" + val
-   saveData()   // ✅ 保存
+  tableData[i].lot = val   // ✅ 只存数字
+  saveData()
   renderTable()
 }
 
