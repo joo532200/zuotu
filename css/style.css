@@ -1,0 +1,288 @@
+/* ===== 全局 ===== */
+html, body{
+  font-family:'Roboto', sans-serif;
+  background: radial-gradient(circle at top, #0b1220, #05080f);
+  color:#fff;
+  margin:0;
+}
+
+
+/* ===== 顶部导航 ===== */
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 30px;
+  background:#0d1321;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo img{
+  width: 60px;
+  
+}
+
+.menu{
+  display:flex;
+  gap:26px;
+}
+
+.menu a{
+  color:#9aa4b2;
+  font-size:20px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  color:#4f7cff;
+}
+
+.menu .active{
+  color:#4f7cff;
+}
+
+.right-nav{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.right-nav img{
+  width:50px;
+  height:50px;
+  object-fit:contain;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.right-nav img:hover{
+  transform:scale(1.1);
+}
+
+
+/* ===== 标题 ===== */
+.title{
+  text-align:center;
+  font-size:40px;
+  margin:40px 0;
+}
+
+
+/* ===== 卡片 ===== */
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-bottom:40px;
+
+  flex-wrap:wrap;   /* ✅ 核心：自动换行 */
+}
+
+.card{
+  background:#eaeaea;
+  color:#000;
+  width:100%;
+  max-width:340px;
+  flex:1 1 300px;
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-bottom:40px;
+  flex-wrap:wrap;
+}
+
+
+
+
+/* 卡片内部 */
+.row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:16px 0;
+}
+
+.left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.left img{
+  width:30px;
+  height:30px;
+}
+
+.right{
+  text-align:right;
+}
+
+.price{
+  font-size:16px;
+  font-weight:500;
+}
+
+.percent{
+  font-size:14px;
+}
+
+.green{color:#2ecc71;}
+.red{color:#e74c3c;}
+
+
+/* ===== 表格 ===== */
+.table{
+  width:100%;
+  border-collapse:collapse;
+  max-width:2555px;   /* ✅ 控制长度（关键） */
+  margin:40px auto; 
+  table-layout:fixed;
+  overflow-x:auto;
+}
+
+.table th,
+.table td{
+  border:1px solid #00ff88;
+  text-align:center;
+}
+
+/* 表头 */
+.table th{
+  font-size:30px;
+  font-weight:700;
+  padding:20px 10px;
+  letter-spacing:1px;
+}
+
+/* 表头图标 */
+.table th img{
+  width:50px;
+  height:50px;
+  object-fit:contain;
+  opacity:0.9;
+
+  position:relative;
+  top:1px;
+}
+
+.th-box{
+  display:flex;
+  align-items:center;   /* ✅ 垂直对齐关键 */
+  justify-content:center;
+  gap:8px;
+}
+
+/* 内容 */
+.table td{
+  font-size:20px;
+  font-weight:600;
+  padding:20px 10px;
+}
+
+/* 行颜色 */
+.row-bg{
+  background:#071322;
+}
+
+.row-bg:nth-child(even){
+  background:#000;
+}
+
+/* 列宽 */
+.table th:nth-child(1),
+.table td:nth-child(1){width:16%;}
+
+.table th:nth-child(2),
+.table td:nth-child(2){width:18%;}
+
+.table th:nth-child(3),
+.table td:nth-child(3){width:12%;}
+
+.table th:nth-child(4),
+.table td:nth-child(4){width:16%;}
+
+.table th:nth-child(5),
+.table td:nth-child(5){width:18%;}
+
+.table th:nth-child(6),
+.table td:nth-child(6){width:12%;}
+
+
+/* ===== 状态图标 ===== */
+.status-icon{
+  width: 50px;
+  height:50px;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.status-icon:hover{
+  transform:scale(1.1);
+}
+
+
+/* ===== 可编辑输入 ===== */
+.edit-input{
+  width:70px;
+  background:transparent;
+  border:none;
+  outline:none;
+  color:#fff;
+  text-align:center;
+  font-weight:600;
+}
+
+.edit-input:focus{
+  border-bottom:1px solid #00e0ff;
+}
+
+
+/* ===== 底部 ===== */
+.footer-line{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.audit-text{
+  font-size:13px;
+  color:#aaa;
+}
+
+.brand{
+  font-size:22px;
+  font-weight:700;
+}
+
+.logos{
+  display:flex;
+  gap:40px;
+  align-items:center;
+}
+
+.logos img{
+  height:70px;
+  transition:0.3s;
+}
+
+.logos img:hover{
+  transform:scale(1.1);
+}
+
+.container{
+  max-width:1200px;
+  width:100%;
+  margin:0 auto;
+  padding:0 20px;
+}
+
