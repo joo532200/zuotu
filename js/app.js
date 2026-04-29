@@ -129,13 +129,14 @@ async function loadNewSpot(){
 
 
 // ===== 表格 =====
-let tableData = JSON.parse(localStorage.getItem("tableData")) || [
-  {date:"", lot:100, qty:2, ok:true, percent:30},
-  {date:"", lot:200, qty:3, ok:true, percent:30},
-  {date:"", lot:300, qty:1, ok:true, percent:30},
-  {date:"", lot:400, qty:2, ok:true, percent:30},
-  {date:"", lot:500, qty:3, ok:true, percent:30},
-  {date:"", lot:1000, qty:1, ok:true, percent:30},
+
+let tableData= JSON.parse(localStorage.getItem("tableData")) ||[
+  {lot:"$100", qty:2, ok:true, percent:30},
+  {lot:"$200", qty:3, ok:true, percent:30},
+  {lot:"$300", qty:1, ok:true, percent:30},
+  {lot:"$400", qty:2, ok:true, percent:30},
+  {lot:"$500", qty:3, ok:true, percent:30},
+  {lot:"$1000", qty:1, ok:true, percent:30},
 ]
 
 
