@@ -152,7 +152,7 @@ function renderTable(){
       <td>${getThaiDate()}</td>
       <td>
   <span class="lot-edit" onclick="editLot(${i})">
-    ${d.lot}
+    $${d.lot}
   </span>
 </td>
       <td>
